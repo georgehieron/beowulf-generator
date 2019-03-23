@@ -1,12 +1,13 @@
 .beowulf {
     p:first-of-type:first-letter {
         font-family: $font-family--2;
-        color: $alt-color;
+        color: $main-color;
         float: left;
         font-size: 75px;
         line-height: 60px;
         padding-top: 4px;
         padding-right: 8px;
         padding-left: 3px;
+        font-weight: normal;
     }
 }

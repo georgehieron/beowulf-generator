@@ -7,33 +7,35 @@
     <link href="https://fonts.googleapis.com/css?family=Almendra|Almendra+SC&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
-    <h1>Beowulf Generator</h1>
-    <p>Wes hāl!</p>
+    <section class="container viewport-padding">
+        <h1>Beowulf Generator</h1>
+        <p>Wes hāl!</p>
 
-    <div class="line-slider">
-        <input type="range" min="1" max="10" value="5" step="1" class="slider" id="line-range">
-        <p>Lines: <span id="line-count"></span></p>
-    </div>
+        <div class="line-slider">
+            <input type="range" min="1" max="10" value="5" step="1" class="slider" id="line-range">
+            <p>Lines: <span id="line-count"></span></p>
+        </div>
 
-    <form>
-        <input type="checkbox" name="hwaet" value="hwaet" id="hwaet">
-        <label for="hwaet">Start with 'Hwæt!'</label>
-    </form>
+        <form>
+            <input type="checkbox" name="hwaet" value="hwaet" id="hwaet">
+            <label for="hwaet">Start with 'Hwæt!'</label>
+        </form>
 
-    <button onclick="newBeowulf()">Generate Beowulf</button>
+        <button onclick="newBeowulf()">Generate Beowulf</button>
 
-    <div id="line-span"></div>
+        <div id="line-span"></div>
 
-    <div class="tooltip transparent" id="copy-button">
-        <button onClick="copyToClipboard('beowulf')">
-            <span class="tooltip__text transparent" id="tooltip__text">Copy to clipboard</span>
-            Copy text
-        </button>
-    </div>
+        <div class="tooltip transparent" id="copy-button">
+            <button onClick="copyToClipboard('beowulf')">
+                <span class="tooltip__text transparent" id="tooltip__text">Copy to clipboard</span>
+                Copy text
+            </button>
+        </div>
 
-    <div class="beowulf" id="beowulf">
-        <!-- Beowulf goes here... -->
-    </div>
+        <div class="beowulf" id="beowulf">
+            <!-- Beowulf goes here... -->
+        </div>
+    </section>
 
     <script src="javascript.js"></script>
 </body>
