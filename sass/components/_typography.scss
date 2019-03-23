@@ -1,8 +1,10 @@
 body {
-    font-family: 'Almendra', serif;
+    font-family: $font-family--1;
     font-size: 20px;
     line-height: 24px;
-    background-color: palegoldenrod;
+    background-color: $main-color--light;
+    background-image: url("../assets/images/clean-gray-paper.png");
+    color: $font-color--1;
 }
 
 h1,
@@ -11,5 +13,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Almendra SC', serif;
+    font-family: $font-family--2;
+}
+
+::-moz-selection {
+    background: $main-color;
+    color: $font-color--2;
+}
+
+::selection {
+    background: $main-color;
+    color: $font-color--2;
 }
