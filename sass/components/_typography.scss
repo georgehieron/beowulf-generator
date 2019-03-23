@@ -1,9 +1,14 @@
 %base-font-style {
     font-family: $font-family--1;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 27px;
     font-weight: bold;
     letter-spacing: 0.2px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 body {
@@ -20,22 +25,36 @@ h6 {
 }
 
 h1 {
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 44px;
+    line-height: 56px;
     margin-bottom: $font-margin--bottom;
-    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        font-size: 55px;
+        line-height: 70px;
+    }
 }
 
 h2 {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: $font-margin--bottom;
+
+    @media screen and (min-width: 768px) {
+        font-size: 30px;
+        line-height: 40px;
+    }
 }
 
 h3 {
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 32px;
     margin-bottom: $font-margin--bottom;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 40px;
+    }
 }
 
 h4,
@@ -50,12 +69,24 @@ p {
     margin-bottom: $font-margin--bottom;
 }
 
+.main-title {
+    text-align: center;
+}
+
+.text--gradient {
+    background: $base-color--dark; // Fallback
+    background: linear-gradient(90deg, $accent-color--dark 0%, $accent-color--light 50%, $accent-color--dark 100%);
+    color: $shade__light--1; // Fallback
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 ::-moz-selection {
-    background: $base-color--dark;
-    color: $font-color--2;
+    background: rgba(224,175,51,0.5);
+    color: $accent-color--light;
 }
 
 ::selection {
-    background: $base-color--dark;
-    color: $font-color--2;
+    background: rgba(224,175,51,0.5);
+    color: $accent-color--light;
 }

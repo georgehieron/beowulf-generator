@@ -1,6 +1,14 @@
 $base-color: #c5a95b;
-$base-color--dark: darken($base-color, 10%);
-$main-color: darkred;
+$base-color--mid: #9f956c;
+$base-color--dark: #584d3d;
+
+$main-color: #e0af33;
+$main-color--light: goldenrod;
+$main-color--dark: darkgoldenrod;
+
+$accent-color: #5a0001;
+$accent-color--light: darkred;
+$accent-color--dark: #3a000b;
 
 $shade__light--1: #D8D8D8;
 $shade__dark--1: #282828;
@@ -11,8 +19,8 @@ $font-family--2: 'Almendra SC', Times New Roman, serif;
 $font-family--3: 'Almendra Display', Times New Roman, cursive;
 
 // Font colors
-$font-color--1: $shade__dark--1;
-$font-color--2: $main-color;
+$font-color--1: $accent-color--dark;
+$font-color--2: $accent-color;
 $font-color--3: $shade__light--1;
 
 // Font margins
