@@ -124,8 +124,14 @@ function newBeowulf() {
 
     }
 
-    document.getElementById('beowulf').innerHTML = generatedBeowulf;
-    document.getElementById('line-span').innerHTML = '<p>Begat lines ' + ((startLine * 10) + 1) + ' to ' + ((endLine + 1) * 10) + ' of Beowulf.</p>';
+    var beowulfFinal = document.getElementById("beowulf");
+    beowulfFinal.innerHTML = generatedBeowulf;
+    if (beowulfFinal.classList.contains('transparent')) {
+        beowulfFinal.classList.remove('transparent');
+    }
+
+    var lineSpan = document.getElementById('line-span');
+    lineSpan.innerHTML = '<p>Begat lines ' + ((startLine * 10) + 1) + ' to ' + ((endLine + 1) * 10) + ' of Beowulf.</p>';
 
     // Reveal the copy text button
     var copyButton = document.getElementById("copy-button");
@@ -152,7 +158,7 @@ function copyToClipboard(id) {
 
     var tooltip = document.getElementById("tooltip__text");
     tooltip.classList.remove('transparent');
-    tooltip.innerHTML = "Copied!";
+    tooltip.innerHTML = "Copied! ⚔️";
     setTimeout(function(){
         tooltip.classList.add("transparent");
     }, 1500);

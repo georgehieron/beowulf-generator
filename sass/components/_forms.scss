@@ -1,7 +1,45 @@
+form {
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
 input,
 label {
     &:hover {
         cursor: pointer;
+    }
+}
+
+input[type=checkbox] {
+    visibility: hidden;
+}
+
+input[type=checkbox] + label {
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 2px;
+        height: 22px;
+        width: 22px;
+        line-height: 18px;
+        font-size: 16px;
+        text-align: left;
+        padding-top: 1px;
+        padding-left: 1px;
+        border: 3px solid $accent-color;
+        color: $accent-color;
+    }
+}
+
+input[type=checkbox]:checked + label {
+    &:before {
+        content: "✓";
     }
 }
 
@@ -66,6 +104,7 @@ input[type=range]::-moz-focus-outer {
     width: 280px;
     display: inline-block;
     position: relative;
+    filter: drop-shadow(2px 3px 3px $shade__dark--2);
 
     @media screen and (min-width: 576px) {
         width: 400px;

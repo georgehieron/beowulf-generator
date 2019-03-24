@@ -86,6 +86,10 @@ small,
     text-align: center;
 }
 
+.text--lighter {
+    color: $accent-color--light;
+}
+
 .text--gradient {
     background: $base-color--dark; // Fallback
     background: linear-gradient(90deg, $accent-color--dark 0%, $accent-color--light 50%, $accent-color--dark 100%);

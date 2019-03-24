@@ -18,6 +18,7 @@ $shade__light--3: #bfbfbf;
 $shade__light--4: #aeaeae;
 
 $shade__dark--1: #282828;
+$shade__dark--2: rgba(40,40,40,0.6);
 
 // Font families
 $font-family--1: 'Almendra', Times New Roman, serif;
@@ -31,3 +32,6 @@ $font-color--3: $shade__light--1;
 
 // Font margins
 $font-margin--bottom: 20px;
+
+// Transitions
+$transition: 0.3s ease all;

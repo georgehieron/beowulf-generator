@@ -1,4 +1,6 @@
 .beowulf {
+    transition: $transition;
+    
     p:first-of-type:first-letter {
         font-family: $font-family--2;
         color: $accent-color--light;

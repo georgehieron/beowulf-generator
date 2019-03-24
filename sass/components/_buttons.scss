@@ -1,12 +1,60 @@
+input[type="submit"],
+button,
+.btn {
+    -webkit-appearance: none;
+    @extend %base-font-style;
+    min-width: 150px;
+    font-family: $font-family--2;
+    padding: 0px 30px;
+    background-color: $accent-color;
+    color: $main-color--light;
+    -webkit-text-fill-color: $main-color--light;
+    border: 3px solid $main-color--light;
+    outline: 2px solid $accent-color;
+    position: relative;
+    transition: $transition;
+    letter-spacing: 1px;
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: $transition;
+        background-image: url("../assets/images/noun_Celtic Knot_676659.svg");
+        background-size: 50px;
+        background-position: center 31%;
+        background-repeat: repeat-x;
+        filter: invert(100%);
+        mix-blend-mode: soft-light;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        color: $main-color;
+        -webkit-text-fill-color: $main-color;
+        border-color: $main-color;
+
+        &:after {
+            opacity: 0.35;
+        }
+    }
+}
+
 /* TOOLTIP */
 .tooltip {
     position: relative;
     display: inline-block;
 
     .tooltip__text {
-        width: 140px;
-        background-color: #555;
-        color: #fff;
+        width: 150px;
+        background-color: $shade__dark--2;
+        color: $main-color;
         text-align: center;
         border-radius: 6px;
         padding: 5px;
@@ -25,7 +73,7 @@
             margin-left: -5px;
             border-width: 5px;
             border-style: solid;
-            border-color: #555 transparent transparent transparent;
+            border-color: $shade__dark--2 transparent transparent transparent;
         }
     }
 }
