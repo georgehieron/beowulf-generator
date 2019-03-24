@@ -125,7 +125,7 @@ function newBeowulf() {
     }
 
     document.getElementById('beowulf').innerHTML = generatedBeowulf;
-    document.getElementById('line-span').innerHTML = '<p>Generated lines ' + ((startLine * 10) + 1) + ' to ' + ((endLine + 1) * 10) + ' of Beowulf.</p>';
+    document.getElementById('line-span').innerHTML = '<p>Begat lines ' + ((startLine * 10) + 1) + ' to ' + ((endLine + 1) * 10) + ' of Beowulf.</p>';
 
     // Reveal the copy text button
     var copyButton = document.getElementById("copy-button");

@@ -3,8 +3,8 @@
         font-family: $font-family--2;
         color: $accent-color--light;
         float: left;
-        font-size: 60px;
-        line-height: 48px;
+        font-size: 70px;
+        line-height: 55px;
         padding-top: 4px;
         padding-right: 8px;
         padding-left: 3px;
@@ -12,8 +12,8 @@
         margin-bottom: $font-margin--bottom;
 
         @media screen and (min-width: 768px) {
-            font-size: 75px;
-            line-height: 60px;
+            font-size: 88px;
+            line-height: 70px;
         }
     }
 }

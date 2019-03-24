@@ -69,6 +69,17 @@ p {
     margin-bottom: $font-margin--bottom;
 }
 
+small,
+.small {
+    font-size: 16px;
+    line-height: 24px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
 .main-title {
     text-align: center;
 }
