@@ -21,7 +21,7 @@ input[type=checkbox] + label {
         content: "";
         position: absolute;
         left: -30px;
-        top: 2px;
+        top: 1px;
         height: 22px;
         width: 22px;
         line-height: 18px;
@@ -31,6 +31,10 @@ input[type=checkbox] + label {
         padding-left: 1px;
         border: 3px solid $accent-color;
         color: $accent-color;
+
+        @media screen and (min-width: 768px) {
+            top: 2px;
+        }
     }
 }
 

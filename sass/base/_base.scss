@@ -65,6 +65,15 @@ body {
 	}
 }
 
+.range-and-copy-button {
+	text-align: center;
+	margin-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
+}
+
 .celtic-knot {
     height: 55px;
     background-image: url("../assets/images/noun_Knot_676663.svg");
