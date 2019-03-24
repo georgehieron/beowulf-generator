@@ -6,12 +6,55 @@ body {
     background-color: $base-color;
     background-image: url("../assets/images/clean-gray-paper.png");
     color: $font-color--1;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		margin-top: 40px;
+	}
 }
 
 .container {
     max-width: $width--1;
     margin-left: auto;
     margin-right: auto;
+}
+
+.intro,
+.range-and-copy-button {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-around;
+		margin-bottom: 40px;
+    }
+}
+
+.intro__lines {
+	margin-bottom: 20px;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 0;
+	}
+}
+
+.intro__generate {
+	margin-bottom: 20px;
+
+	@media screen and (min-width: 768px) {
+		text-align: right;
+		margin-bottom: 0;
+	}
+}
+
+.celtic-knot {
+    height: 55px;
+    background-image: url("../assets/images/noun_Knot_676663.svg");
+    background-repeat: repeat-x;
+    background-size: 150px;
+    background-position: center -48px;
+	opacity: 0.8;
 }
