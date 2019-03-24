@@ -31,7 +31,7 @@ input[type=range]::-moz-focus-outer {
     height: 50px;
     background: $main-color;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: grabbing;
     z-index: 2;
     background-image: url("../assets/images/noun_Round Shield_966697.svg");
     background-repeat: no-repeat;
@@ -44,7 +44,7 @@ input[type=range]::-moz-focus-outer {
     height: 50px;
     background: $main-color;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: grabbing;
     z-index: 2;
     background-image: url("../assets/images/noun_Round Shield_966697.svg");
     background-repeat: no-repeat;

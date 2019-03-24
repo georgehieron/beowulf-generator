@@ -9,64 +9,67 @@
     <link href="https://fonts.googleapis.com/css?family=Almendra|Almendra+SC&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
-    <div class="celtic-knot margin--flex--small"></div>
+    <div class="texture">
+        <div class="celtic-knot margin--flex--small"></div>
 
-    <section class="container viewport-padding">
-        <h1 class="main-title text--gradient">Beowulf Generator</h1>
-        <p>Wæs hæl! Welcumen to mine Beowulf Generator! I bidde thee use it for thy fyller script in thine web procgects, ridding thine sytes of the Latin tunge. Begone, Lorem ipsum!</p>
+        <section class="container viewport-padding">
+            <h1 class="main-title text--gradient">Beowulf Generator</h1>
+            <p>Wæs hæl! Welcumen to mine Beowulf Generator! I bidde thee use it for thy fyller script in thine web procgects, ridding thine sytes of the Latin tunge. Begone, Lorem ipsum!</p>
 
-        <div class="intro">
-            <div class="intro__lines">
-                <div class="sword--container">
-                    <div class="line-slider sword">
-                        <input type="range" min="1" max="10" value="5" step="1" class="line-range blade" id="line-range">
-                        <div class='guard'></div>
-                        <div class='grip'></div>
-                        <div class='pommel'></div>
+            <div class="intro">
+                <div class="intro__lines">
+                    <div class="sword--container">
+                        <div class="line-slider sword">
+                            <input type="range" min="1" max="10" value="5" step="1" class="line-range blade" id="line-range">
+                            <div class='guard'></div>
+                            <div class='grip'></div>
+                            <div class='pommel'></div>
+                        </div>
+                        <span class="lines">Lines: <span id="line-count"></span></span>
                     </div>
-                    <span class="lines">Lines: <span id="line-count"></span></span>
+                    <small>Dragge the scield along the sweord to beget more Beowulf!</small>
+                    <small>Ye shall beget twentig lynes of Beowulf in each paragraf.</small>
                 </div>
-                <small>Dragge the scield along the sweord to beget more Beowulf!</small>
-                <small>Ye shall beget twentig lynes of Beowulf in each paragraf.</small>
+                <div class="intro__generate">
+                    <form>
+                        <input type="checkbox" name="hwaet" value="hwaet" id="hwaet">
+                        <label for="hwaet">Start with 'Hwæt!'</label>
+                    </form>
+
+                    <button onclick="newBeowulf()">Generate Beowulf</button>
+                </div>
             </div>
-            <div class="intro__generate">
-                <form>
-                    <input type="checkbox" name="hwaet" value="hwaet" id="hwaet">
-                    <label for="hwaet">Start with 'Hwæt!'</label>
-                </form>
 
-                <button onclick="newBeowulf()">Generate Beowulf</button>
+        </section>
+
+            <div class="celtic-knot margin--flex"></div>
+
+        <section class="container viewport-padding">
+
+            <div class="range-and-copy-button margin--flex">
+                <div id="line-span"></div>
+
+                <div class="tooltip transparent" id="copy-button">
+                    <button onClick="copyToClipboard('beowulf')">
+                        <span class="tooltip__text transparent" id="tooltip__text">Copy to clipboard</span>
+                        Copy text
+                    </button>
+                </div>
             </div>
-        </div>
 
-    </section>
-
-        <div class="celtic-knot margin--flex"></div>
-
-    <section class="container viewport-padding">
-
-        <div class="range-and-copy-button margin--flex">
-            <div id="line-span"></div>
-
-            <div class="tooltip transparent" id="copy-button">
-                <button onClick="copyToClipboard('beowulf')">
-                    <span class="tooltip__text transparent" id="tooltip__text">Copy to clipboard</span>
-                    Copy text
-                </button>
+            <div class="beowulf" id="beowulf">
+                <!-- Beowulf goes here... -->
             </div>
-        </div>
 
-        <div class="beowulf" id="beowulf">
-            <!-- Beowulf goes here... -->
-        </div>
+        </section>
 
-    </section>
+        <div class="celtic-knot margin--flex hidden" id="celtic-knot--last"></div>
 
-    <div class="celtic-knot margin--flex hidden" id="celtic-knot--last"></div>
+        <footer>
 
-    <footer>
-
-    </footer>
+        </footer>
+    </div>
+    
     <script src="javascript.js"></script>
 </body>
 </html>
