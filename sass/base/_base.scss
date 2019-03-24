@@ -25,6 +25,14 @@ body {
     margin-right: auto;
 }
 
+.top-section {
+	text-align: center;
+
+	@media screen and (min-width: 768px) {
+		text-align: left;
+	}
+}
+
 .intro,
 .range-and-copy-button {
     display: flex;
@@ -47,11 +55,13 @@ body {
 }
 
 .intro__generate {
+	min-width: 250px;
 	margin-bottom: 20px;
 
 	@media screen and (min-width: 768px) {
 		text-align: right;
 		margin-bottom: 0;
+		margin-left: 20px;
 	}
 }
 

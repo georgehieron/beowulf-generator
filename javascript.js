@@ -126,8 +126,10 @@ function newBeowulf() {
 
     var beowulfFinal = document.getElementById("beowulf");
     beowulfFinal.innerHTML = generatedBeowulf;
-    if (beowulfFinal.classList.contains('transparent')) {
-        beowulfFinal.classList.remove('transparent');
+
+    var beowulfContainer = document.getElementById("beowulf--container");
+    if (beowulfContainer.classList.contains('transparent')) {
+        beowulfContainer.classList.remove('transparent');
     }
 
     var lineSpan = document.getElementById('line-span');
