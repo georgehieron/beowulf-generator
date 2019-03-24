@@ -4,7 +4,7 @@ form {
 
 input,
 label {
-    -webkit-tap-highlight-color: $main-color--light;
+    -webkit-tap-highlight-color: $main-color--translucent;
 
     &:hover {
         cursor: pointer;

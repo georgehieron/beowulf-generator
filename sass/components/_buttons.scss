@@ -14,7 +14,7 @@ button,
     position: relative;
     transition: $transition;
     letter-spacing: 1px;
-    -webkit-tap-highlight-color: $main-color--light;
+    -webkit-tap-highlight-color: $main-color--translucent;
 
     &:after {
         content: "";
