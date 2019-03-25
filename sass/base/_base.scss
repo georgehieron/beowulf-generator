@@ -82,4 +82,8 @@ body {
     background-position: center -48px;
 	opacity: 0.7;
 	mix-blend-mode: soft-light;
+
+	&.celtic-knot--last {
+		transition: $transition;
+	}
 }

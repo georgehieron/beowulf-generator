@@ -143,8 +143,8 @@ function newBeowulf() {
 
     // Reveal the last Celtic knot pattern button
     var copyButton = document.getElementById("celtic-knot--last");
-    if (copyButton.classList.contains('hidden')) {
-        copyButton.classList.remove('hidden');
+    if (copyButton.classList.contains('transparent')) {
+        copyButton.classList.remove('transparent');
     }
 }
 
