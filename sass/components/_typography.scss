@@ -69,16 +69,38 @@ p {
     margin-bottom: $font-margin--bottom;
 }
 
-small,
-.small {
+a {
+    color: $accent-color;
+    transition: $transition;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+        color: $accent-color--light;
+    }
+}
+
+.tip {
     display: block;
     font-size: 16px;
     line-height: 24px;
     color: $accent-color--light;
+    margin-bottom: 0;
 
     @media screen and (min-width: 768px) {
         font-size: 18px;
         line-height: 27px;
+    }
+}
+
+small,
+.small {
+    font-size: 14px;
+    line-height: 21px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 

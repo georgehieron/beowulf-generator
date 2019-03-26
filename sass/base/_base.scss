@@ -8,6 +8,9 @@ body {
 }
 
 .texture {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
 	min-height: 100vh;
 	background-color: $base-color;
 	background-image: url("../assets/images/clean-gray-paper.png");
@@ -86,4 +89,9 @@ body {
 	&.celtic-knot--last {
 		transition: $transition;
 	}
+}
+
+footer {
+	justify-self: flex-end;
+	margin-top: auto;
 }
