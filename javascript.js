@@ -104,7 +104,7 @@ function newBeowulf() {
 
             // Replace the last comma or semicolon of each line with a full stop.
             // Add a full stop to the end of each line if it still doesn't have one.
-            beowulfLine = beoLineCapitalised.replace(/[,;]\s*$/, "").replace(/([^.])$/, '$1.');
+            beowulfLine = beoLineCapitalised.replace(/[,;:]\s*$/, "").replace(/([^.])$/, '$1.');
 
 
             // If selected, start the generated text with 'Hwæt!',
