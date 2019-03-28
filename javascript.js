@@ -128,8 +128,8 @@ function newBeowulf() {
     beowulfFinal.innerHTML = generatedBeowulf;
 
     var beowulfContainer = document.getElementById("beowulf--container");
-    if (beowulfContainer.classList.contains('transparent')) {
-        beowulfContainer.classList.remove('transparent');
+    if (beowulfContainer.classList.contains('transparent', 'collapsed')) {
+        beowulfContainer.classList.remove('transparent', 'collapsed');
     }
 
     var lineSpan = document.getElementById('line-span');
@@ -143,8 +143,8 @@ function newBeowulf() {
 
     // Reveal the last Celtic knot pattern button
     var copyButton = document.getElementById("celtic-knot--last");
-    if (copyButton.classList.contains('transparent')) {
-        copyButton.classList.remove('transparent');
+    if (copyButton.classList.contains('transparent', 'collapsed')) {
+        copyButton.classList.remove('transparent', 'collapsed');
     }
 }
 
