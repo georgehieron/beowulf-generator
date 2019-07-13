@@ -133,7 +133,7 @@ function newBeowulf() {
     }
 
     var lineSpan = document.getElementById('line-span');
-    lineSpan.innerHTML = '<p>Begat lines ' + ((startLine * 10) + 1) + ' to ' + ((endLine + 1) * 10) + ' of Beowulf.</p>';
+    lineSpan.innerHTML = '<p>Begat lynes ' + ((startLine * 10) + 1) + ' to ' + ((endLine + 1) * 10) + ' of Beowulf.</p>';
 
     // Reveal the copy text button
     var copyButton = document.getElementById("copy-button");
