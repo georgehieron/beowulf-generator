@@ -78,6 +78,11 @@ a {
     &:hover {
         color: $accent-color--light;
     }
+
+    &:focus {
+        outline: 3px solid $accent-color--light;
+        outline-offset: 3px;
+    }
 }
 
 .tip {

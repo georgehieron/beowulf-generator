@@ -45,6 +45,10 @@ button,
             opacity: 0.35;
         }
     }
+
+    &:focus {
+        outline: 9px double $accent-color;
+    }
 }
 
 /* TOOLTIP */

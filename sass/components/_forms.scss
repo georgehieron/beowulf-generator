@@ -12,7 +12,7 @@ label {
 }
 
 input[type=checkbox] {
-    visibility: hidden;
+    opacity: 0;
 }
 
 input[type=checkbox] + label {
@@ -22,21 +22,26 @@ input[type=checkbox] + label {
     &:before {
         content: "";
         position: absolute;
-        left: -30px;
-        top: 1px;
-        height: 22px;
-        width: 22px;
-        line-height: 18px;
-        font-size: 16px;
+        left: -34px;
+        top: 0;
+        height: 24px;
+        width: 24px;
+        font-size: 1rem;
+        line-height: 1.2rem;
         text-align: left;
         padding-top: 1px;
         padding-left: 1px;
         border: 3px solid $accent-color;
         color: $accent-color;
+        outline: 0;
+        transition: $transition;
+    }
+}
 
-        @media screen and (min-width: 768px) {
-            top: 2px;
-        }
+input[type=checkbox]:focus + label {
+    &:before {
+        outline: 3px solid $accent-color;
+        outline-offset: 3px;
     }
 }
 
@@ -60,7 +65,8 @@ input[type=range]::-moz-focus-outer {
     &:focus {
         &::-webkit-slider-thumb,
         &::-moz-range-thumb {
-            outline: 1px dotted $accent-color--light;
+            outline: 2px dashed $accent-color--light;
+            outline-offset: 2px;
         }
     }
 }
