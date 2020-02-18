@@ -123,17 +123,24 @@ function newBeowulf() {
         }
 
     }
-
+    
+    // Insert generated Kalevala excerpt
     var beowulfFinal = document.getElementById("beowulf");
     beowulfFinal.innerHTML = generatedBeowulf;
 
+    // Reveal the container if it was previously hidden
     var beowulfContainer = document.getElementById("beowulf--container");
     if (beowulfContainer.classList.contains('transparent', 'collapsed')) {
         beowulfContainer.classList.remove('transparent', 'collapsed');
     }
 
+    // Set up the line range as a nice string.
     var lineSpan = document.getElementById('line-span');
-    lineSpan.innerHTML = '<p>Begat lynes ' + ((startLine * 10) + 1) + ' to ' + ((endLine + 1) * 10) + ' of Beowulf.</p>';
+    // Calculate the start line
+    var startLineCalculated = (startLine * 10) + 1;
+    // Calculate the end line
+    var endLineCalculated = (endLine + 1) * 10;
+    lineSpan.innerHTML = '<p>Begat lynes ' + startLineCalculated + ' to ' + endLineCalculated + ' of Beowulf.</p>';
 
     // Reveal the copy text button
     var copyButton = document.getElementById("copy-button");
