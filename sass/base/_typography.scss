@@ -1,5 +1,10 @@
-%base-font-style {
-    font-family: $font-family--1;
+@font-face {
+    font-family: "Pfeffer Mediæval";
+    src: url("../assets/fonts/PfefferMediaeval.otf") format("opentype");
+}
+
+@mixin base-font-style {
+    font-family: $font-family;
     font-size: 18px;
     line-height: 27px;
     font-weight: bold;
@@ -11,8 +16,18 @@
     }
 }
 
+@mixin font-small-caps {
+    font-feature-settings: 'smcp';
+    letter-spacing: .05ch;
+}
+
+@mixin font-insular-variant {
+    font-feature-settings: 'hist', 'ss02';
+}
+
+html,
 body {
-    @extend %base-font-style;
+    @include base-font-style;
 }
 
 h1,
@@ -21,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-family--2;
+    @include font-small-caps;
 }
 
 h1 {
@@ -60,12 +75,12 @@ h3 {
 h4,
 h5,
 h6 {
-    @extend %base-font-style;
+    @include base-font-style;
     margin-bottom: $font-margin--bottom;
 }
 
 p {
-    @extend %base-font-style;
+    @include base-font-style;
     margin-bottom: $font-margin--bottom;
 }
 
@@ -83,6 +98,11 @@ a {
         outline: 3px solid $accent-color--light;
         outline-offset: 3px;
     }
+}
+
+.lede,
+.tip {
+    font-feature-settings: 'ss01';
 }
 
 .tip {
@@ -119,18 +139,23 @@ small,
 
 .text--gradient {
     background: $base-color--dark; // Fallback
-    background: linear-gradient(90deg, $accent-color--dark 0%, $accent-color--light 50%, $accent-color--dark 100%);
+    background: linear-gradient(
+        90deg,
+        $accent-color--dark 0%,
+        $accent-color--light 50%,
+        $accent-color--dark 100%
+    );
     color: $shade__light--1; // Fallback
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 ::-moz-selection {
-    background: rgba(224,175,51,0.5);
+    background: rgba(224, 175, 51, 0.5);
     color: $accent-color--light;
 }
 
 ::selection {
-    background: rgba(224,175,51,0.5);
+    background: rgba(224, 175, 51, 0.5);
     color: $accent-color--light;
 }

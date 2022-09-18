@@ -3,8 +3,10 @@
 }
 
 .beowulf {
+    @include font-insular-variant;
+
     p:first-of-type:first-letter {
-        font-family: $font-family--2;
+        @include font-small-caps;
         color: $accent-color--light;
         float: left;
         font-size: 80px;
