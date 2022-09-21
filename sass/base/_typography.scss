@@ -26,6 +26,19 @@
     font-feature-settings: 'hist', 'ss02';
 }
 
+@mixin selection-styles {
+    background: rgba($accent-color--dark, .9);
+    color: $base-color;
+}
+
+::-moz-selection {
+    @include selection-styles;
+}
+
+::selection {
+    @include selection-styles;
+}
+
 body {
     @include base-font-style;
 }
@@ -151,14 +164,4 @@ small,
     color: $shade__light--1; // Fallback
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-::-moz-selection {
-    background: rgba(224, 175, 51, .5);
-    color: $accent-color--light;
-}
-
-::selection {
-    background: rgba(224, 175, 51, .5);
-    color: $accent-color--light;
 }
