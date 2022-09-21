@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Pfeffer Mediæval";
     src: url("../assets/fonts/PfefferMediaeval.otf") format("opentype");
+    font-weight: 400;
 }
 
 @mixin base-font-style {
@@ -10,7 +11,7 @@
     font-weight: bold;
     letter-spacing: 0.2px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 20px;
         line-height: 30px;
     }
@@ -25,7 +26,6 @@
     font-feature-settings: 'hist', 'ss02';
 }
 
-html,
 body {
     @include base-font-style;
 }
@@ -44,7 +44,7 @@ h1 {
     line-height: 56px;
     margin-bottom: $font-margin--bottom;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 55px;
         line-height: 70px;
     }
@@ -55,7 +55,7 @@ h2 {
     line-height: 32px;
     margin-bottom: $font-margin--bottom;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 30px;
         line-height: 40px;
     }
@@ -66,7 +66,7 @@ h3 {
     line-height: 32px;
     margin-bottom: $font-margin--bottom;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 24px;
         line-height: 40px;
     }
@@ -112,7 +112,7 @@ a {
     color: $accent-color--light;
     margin-bottom: 0;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 18px;
         line-height: 27px;
     }
@@ -123,7 +123,7 @@ small,
     font-size: 12px;
     line-height: 18px;
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 48rem) {
         font-size: 14px;
         line-height: 21px;
     }
