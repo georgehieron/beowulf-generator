@@ -60,11 +60,14 @@ body {
 }
 
 .intro__generate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-width: 15.625rem;
     margin-bottom: 1.25rem;
 
     @media screen and (min-width: 48rem) {
-        text-align: right;
         margin-bottom: 0;
         margin-left: 1.25rem;
     }

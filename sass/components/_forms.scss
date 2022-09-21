@@ -47,7 +47,9 @@ input[type=checkbox]:focus + label {
 
 input[type=checkbox]:checked + label {
     &:before {
-        content: "✓";
+        background-image: url("../assets/images/tick.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 }
 
