@@ -42,7 +42,7 @@ button,
         border-color: $main-color;
 
         &:after {
-            opacity: 0.35;
+            opacity: .35;
         }
     }
 
@@ -68,14 +68,14 @@ button,
         bottom: 150%;
         left: 50%;
         margin-left: -4.6875rem;
-        transition: opacity 0.3s;
+        transition: opacity .3s;
 
         &:after {
             content: "";
             position: absolute;
             top: 100%;
             left: 50%;
-            margin-left: -0.3125rem;
+            margin-left: -.3125rem;
             border-width: .3125rem;
             border-style: solid;
             border-color: $shade__dark--2 transparent transparent transparent;

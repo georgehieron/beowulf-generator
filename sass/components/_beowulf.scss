@@ -23,12 +23,12 @@
         }
 
         &::-moz-selection {
-            background: rgba(224,175,51,0.5);
+            background: rgba(224,175,51,.5);
             color: $accent-color--light;
         }
 
         &::selection {
-            background: rgba(224,175,51,0.5);
+            background: rgba(224,175,51,.5);
             color: $accent-color--light;
         }
     }

@@ -7,10 +7,10 @@ $base-color--dark: #584d3d;
 $main-color: #e0af33;
 $main-color--light: goldenrod;
 $main-color--dark: darkgoldenrod;
-$main-color--translucent: rgba(224,175,51,0.5);
+$main-color--translucent: rgba(224,175,51,.5);
 
 $accent-color: #5a0001;
-$accent-color--light: darkred;
+$accent-color--light: #780000;
 $accent-color--dark: #3a000b;
 
 $shade__light--1: #d8d8d8;
@@ -19,7 +19,7 @@ $shade__light--3: #bfbfbf;
 $shade__light--4: #aeaeae;
 
 $shade__dark--1: #282828;
-$shade__dark--2: rgba(40,40,40,0.8);
+$shade__dark--2: rgba(40,40,40,.8);
 
 // Font families
 $font-family: 'Pfeffer Mediæval', Times New Roman, serif;
@@ -33,4 +33,4 @@ $font-color--3: $shade__light--1;
 $font-margin--bottom: 1.25rem;
 
 // Transitions
-$transition: 0.3s ease all;
+$transition: .3s ease all;
