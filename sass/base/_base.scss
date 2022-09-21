@@ -16,11 +16,11 @@ body {
     min-height: 100vh;
     background-color: $base-color;
     background-image: url("../assets/images/clean-gray-paper.png");
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 1.25rem;
+    padding-bottom: 2.5rem;
 
     @media screen and (min-width: 48rem) {
-        padding-top: 40px;
+        padding-top: 2.5rem;
     }
 }
 
@@ -47,12 +47,12 @@ body {
     @media screen and (min-width: 48rem) {
         flex-direction: row;
         justify-content: space-around;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 }
 
 .intro__lines {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 
     @media screen and (min-width: 48rem) {
         margin-bottom: 0;
@@ -60,19 +60,19 @@ body {
 }
 
 .intro__generate {
-    min-width: 250px;
-    margin-bottom: 20px;
+    min-width: 15.625rem;
+    margin-bottom: 1.25rem;
 
     @media screen and (min-width: 48rem) {
         text-align: right;
         margin-bottom: 0;
-        margin-left: 20px;
+        margin-left: 1.25rem;
     }
 }
 
 .range-and-copy-button {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 
     @media screen and (min-width: 48rem) {
         text-align: left;
@@ -80,11 +80,11 @@ body {
 }
 
 .celtic-knot {
-    height: 55px;
+    height: 3.4375rem;
     background-image: url("../assets/images/noun_Knot_676663.svg");
     background-repeat: repeat-x;
-    background-size: 150px;
-    background-position: center -48px;
+    background-size: 9.375rem;
+    background-position: center -3rem;
     opacity: 0.7;
     mix-blend-mode: soft-light;
 
@@ -103,7 +103,7 @@ footer {
         text-align: center;
 
         > :last-child {
-            margin-top: 1rem;
+            margin-top: 16px;
         }
 
         @media screen and (min-width: 48rem) {

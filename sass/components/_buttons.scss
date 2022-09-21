@@ -3,17 +3,17 @@ button,
 .btn {
     -webkit-appearance: none;
     @include base-font-style;
-    min-width: 150px;
+    min-width: 9.375rem;
     @include font-small-caps;
-    padding: 0px 30px;
+    padding: 0rem 1.875rem;
     background-color: $accent-color;
     color: $main-color--light;
     -webkit-text-fill-color: $main-color--light;
-    border: 3px solid $main-color--light;
-    outline: 2px solid $accent-color;
+    border: .1875rem solid $main-color--light;
+    outline: .125rem solid $accent-color;
     position: relative;
     transition: $transition;
-    letter-spacing: 1px;
+    letter-spacing: .0625rem;
     -webkit-tap-highlight-color: $main-color--translucent;
 
     &:after {
@@ -26,7 +26,7 @@ button,
         opacity: 0;
         transition: $transition;
         background-image: url("../assets/images/noun_Celtic Knot_676659.svg");
-        background-size: 50px;
+        background-size: 3.125rem;
         background-position: center 31%;
         background-repeat: repeat-x;
         filter: invert(100%);
@@ -47,7 +47,7 @@ button,
     }
 
     &:focus {
-        outline: 9px double $accent-color;
+        outline: .5625rem double $accent-color;
     }
 }
 
@@ -57,17 +57,17 @@ button,
     display: inline-block;
 
     .tooltip__text {
-        width: 150px;
+        width: 9.375rem;
         background-color: $shade__dark--2;
         color: $main-color;
         text-align: center;
-        border-radius: 6px;
-        padding: 5px;
+        border-radius: .375rem;
+        padding: .3125rem;
         position: absolute;
         z-index: 1;
         bottom: 150%;
         left: 50%;
-        margin-left: -75px;
+        margin-left: -4.6875rem;
         transition: opacity 0.3s;
 
         &:after {
@@ -75,8 +75,8 @@ button,
             position: absolute;
             top: 100%;
             left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
+            margin-left: -0.3125rem;
+            border-width: .3125rem;
             border-style: solid;
             border-color: $shade__dark--2 transparent transparent transparent;
         }
