@@ -123,7 +123,7 @@ function newBeowulf() {
         }
 
     }
-    
+
     // Insert generated Kalevala excerpt
     var beowulfFinal = document.getElementById("beowulf");
     beowulfFinal.innerHTML = generatedBeowulf;
