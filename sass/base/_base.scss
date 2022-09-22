@@ -109,6 +109,10 @@ footer {
             margin-top: 1rem;
         }
 
+        small {
+            margin: .25rem 0;
+        }
+
         @media screen and (min-width: 48rem) {
             flex-direction: row;
             justify-content: space-between;
