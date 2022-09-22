@@ -73,8 +73,7 @@ input[type=range]::-moz-focus-outer {
     }
 }
 
-.line-range::-webkit-slider-thumb {
-    -webkit-appearance: none;
+@mixin shield-styles {
     appearance: none;
     width: 50px;
     height: 50px;
@@ -88,17 +87,14 @@ input[type=range]::-moz-focus-outer {
     background-position: center 33%;
 }
 
+.line-range::-webkit-slider-thumb {
+    @include shield-styles;
+
+    -webkit-appearance: none;
+}
+
 .line-range::-moz-range-thumb {
-    width: 50px;
-    height: 50px;
-    background: $main-color;
-    border-radius: 50%;
-    cursor: grabbing;
-    z-index: 2;
-    background-image: url("../assets/images/noun_Round_Shield_966697.svg");
-    background-repeat: no-repeat;
-    background-size: 98px;
-    background-position: center 33%;
+    @include shield-styles;
 }
 
 // SWORD STYLES
