@@ -122,4 +122,13 @@ footer {
             }
         }
     }
+
+    .carbonbadge {
+        margin-top: 3rem;
+        filter: grayscale(1);
+
+        * {
+            font-weight: initial;
+        }
+    }
 }
