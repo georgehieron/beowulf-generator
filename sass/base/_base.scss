@@ -97,8 +97,14 @@ body {
 }
 
 footer {
+    display: block;
+    width: 100%;
     justify-self: flex-end;
     margin-top: auto;
+
+    > * + * {
+        margin-top: 3rem;
+    }
 
     .footer-links {
         display: flex;
@@ -119,6 +125,27 @@ footer {
 
             > :last-child {
                 margin-top: 0;
+            }
+        }
+    }
+
+    .attributions {
+        summary {
+            &:hover {
+                cursor: pointer;
+            }
+
+            &:focus-visible {
+                outline: .1875rem solid $main-color--light;
+                outline-offset: .1875rem;
+            }
+        }
+
+        > small {
+            display: block;
+
+            + small {
+                margin-top: .2rem;
             }
         }
     }
