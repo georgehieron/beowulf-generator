@@ -169,7 +169,7 @@ footer {
             }
 
             &:focus-visible {
-                outline: .1875rem solid $main-color--light;
+                outline: .1875rem solid $accent-color;
                 outline-offset: .1875rem;
             }
         }
